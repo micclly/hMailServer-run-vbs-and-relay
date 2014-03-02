@@ -90,6 +90,15 @@ DEBUG ログはそれなりに多くのログが出るため、動作が確認�
 ![hMailServer Administrator 管理画面: Logging](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin06.png)
 
 
+#### SMTP 認証をしないように設定
 
+デフォルトでは、
 
+* ``From: <example@yahoo.co.jp>``
+* ``To: <example@gmail.com>``
 
+というように、From と To が自分のドメインではない送信の場合、認証が要求されます。
+
+これを認証されないようにするため、「Settings」－「Advanced」－「IP Ranges」－「My computer」ツリーを開き、「Require SMTP Authentication」の列の一番下にある「External to external e-mail address」のチェックをオフにしてください。
+
+![hMailServer Administrator 管理画面: Disable SMTP auth](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin07.png)
