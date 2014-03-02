@@ -154,3 +154,31 @@ OKをクリックすると、以下のように表示されます。
 
 ここまでで、最低限の hMailServer の設定が完了です。
 
+### 4. MetaTrader4 のメール送信設定を変更する
+
+MetaTrader4 で、hMailServer を使ってメール送信をするようにします。
+
+
+![MetaTrader4 メール設定画面](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/mt4-email.png)
+
+以下のように設定してください。
+
+* SMTP server
+    * localhost
+* SMTP login
+    * 空
+* SMTP password
+    * 空
+* From
+    * hMailServer でリレー先に設定したメールサーバのメールアカウント（メールアドレス）
+* To
+    * 通知先メールアドレス
+
+### 5. 動作確認
+
+実際にテストメールや ``SendMail`` 関数を使ってメール送信をしてください。
+
+以下のようになれば正常です。
+
+* ``C:\Windows\Temp\mail-from-mt4.txt`` にメール本文が書き込まれる
+* 通知先メールアドレスにメールが正常に送信される
