@@ -33,14 +33,14 @@ hMailServer は、インストールフォルダの配下にある ``Events`` �
 
 hMailServer Administrator を最初起動すると、以下の画面が表示されます。
 
-![hMailServer Administrator 起動画面](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/admin01.png)
+![hMailServer Administrator 起動画面](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin01.png)
 
 管理対象は1個しかありませんので、上の画像のとおり「Automatically connect on startup」にチェックをいれてください。
 
 「Connect」をクリックすると、以下のパスワード入力画面が表示されるので、インストール時に設定した管理パスワードを入力してください。
 
-![hMailServer Administrator パスワード入力画面](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/admin02.png)
+![hMailServer Administrator パスワード入力画面](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin02.png)
 
 「OK」をクリックして認証に成功すれば、以下の管理画面が表示されます。
 
-![hMailServer Administrator 管理画面](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/admin03.png)
+![hMailServer Administrator 管理画面](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin03.png)
