@@ -125,4 +125,32 @@ DEBUG ログはそれなりに多くのログが出るため、動作が確認�
 
 VBScript にシンタックスエラーがある場合は、「Check syntax」でエラーダイアログが表示されます。
 
+#### VBScript を実行するように Rule を設定
+
+Rule を設定することで、VBScript をメール受信時に実行できるようになります。
+
+まず、「Rule」ツリーを開き、「Add」ボタンをクリックしてください。
+
+![hMailServer Administrator 管理画面: Rule](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin09.png)
+
+Rule 設定ダイアログが表示されます。
+
+まず、「Name」には任意の名前を入力してください。ここでは ``Write Text``と入力しています。
+
+![hMailServer Administrator 管理画面: Rule: Add](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin10.png)
+次に、「Actions」の部分にある「Add」ボタンをクリックしてください。 Action の設定ダイアログが表示されます。
+
+ここで「Run function」を選択し、「Script function」には ``ReceiveFromMT4`` と入力します。これは、 ``Events\EventHandlers.vbs`` に追加したプロシージャ名です。
+
+![hMailServer Administrator 管理画面: Rule: Add Action](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin11.png)
+
+OKをクリックすると、以下のように表示されます。
+
+![hMailServer Administrator 管理画面: Rule: After Added Action](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin12.png)
+
+さらにOKをクリックすると、以下のように表示されます。
+
+![hMailServer Administrator 管理画面: Rule: After Added Rule](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin13.png)
+
+ここまでで、最低限の hMailServer の設定が完了です。
 
