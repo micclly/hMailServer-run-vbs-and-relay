@@ -44,3 +44,28 @@ hMailServer Administrator を最初起動すると、以下の画面が表示さ
 「OK」をクリックして認証に成功すれば、以下の管理画面が表示されます。
 
 ![hMailServer Administrator 管理画面](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin03.png)
+
+#### リレーサーバの設定
+
+hMailServer で受け取ったメールを、外部の SMTP サーバにリレーするように設定します。
+
+以下の画像のように、「Settings」－「Protocols」－「SMTP」ツリーを開いて、「Delivery of e-mail」タブを開きます。
+
+![hMailServer Administrator 管理画面: Delivery of e-mails タブ](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin03.png)
+
+「SMTP Relayer」から下を、通常使用している SMTP サーバの設定にしてください。
+
+Yahoo! Japan の場合は、以下のようになります。
+
+* Remote host name
+    * ``smtp.mail.yahoo.co.jp``
+* Remote TCP/IP Port
+    * ``587``
+* Server requires authentication
+    * チェックON
+* User name
+    * SMTP ユーザ名
+* Password
+    * SMTP パスワード
+
+
