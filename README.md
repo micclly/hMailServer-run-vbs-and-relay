@@ -138,7 +138,14 @@ Rule 設定ダイアログが表示されます。
 まず、「Name」には任意の名前を入力してください。ここでは ``Write Text``と入力しています。
 
 ![hMailServer Administrator 管理画面: Rule: Add](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin10.png)
-次に、「Actions」の部分にある「Add」ボタンをクリックしてください。 Action の設定ダイアログが表示されます。
+次に、「Criteria」の部分にある「Add」ボタンをクリックしてください。 Criteria の設定ダイアログが表示されます。
+
+手っ取り早く、「Predefined filed」から「From」を選び、「Search type」から「Wildcard」を選び、「Value」に ``*`` を入力してください。
+
+![hMailServer Administrator 管理画面: Rule: Add Criteria](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin14.png)
+
+
+「OK」ボタンをクリックし、「Actions」の部分にある「Add」ボタンをクリックしてください。 Action の設定ダイアログが表示されます。
 
 ここで「Run function」を選択し、「Script function」には ``ReceiveFromMT4`` と入力します。これは、 ``Events\EventHandlers.vbs`` に追加したプロシージャ名です。
 
@@ -146,7 +153,7 @@ Rule 設定ダイアログが表示されます。
 
 OKをクリックすると、以下のように表示されます。
 
-![hMailServer Administrator 管理画面: Rule: After Added Action](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin12.png)
+![hMailServer Administrator 管理画面: Rule: After Added Action](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin16.png)
 
 さらにOKをクリックすると、以下のように表示されます。
 
