@@ -51,7 +51,7 @@ hMailServer で受け取ったメールを、外部の SMTP サーバにリレ�
 
 以下の画像のように、「Settings」－「Protocols」－「SMTP」ツリーを開いて、「Delivery of e-mail」タブを開きます。
 
-![hMailServer Administrator 管理画面: Delivery of e-mails タブ](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin03.png)
+![hMailServer Administrator 管理画面: Delivery of e-mails タブ](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin04.png)
 
 「SMTP Relayer」から下を、通常使用している SMTP サーバの設定にしてください。
 
