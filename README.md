@@ -68,4 +68,28 @@ Yahoo! Japan の場合は、以下のようになります。
 * Password
     * SMTP パスワード
 
+設定を変えたら、右下の「Save」ボタンをクリックして保存してください。
+
+#### POP3, IMAP サーバの無効化
+
+POP3, IMAP サーバは使わないので無効化しましょう。
+
+以下の画像のように、「Settings」－「Protocols」ツリーを開いて、「POP3」と「IMAP」のチェックを外して「Save」ボタンをクリックします。
+
+![hMailServer Administrator 管理画面: Protocols](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin05.png)
+
+
+#### ロギングの設定
+
+必須ではありませんが、うまくいかないときに原因追究する際、ログがあったほうがよいので、ロギングを有効にしましょう。
+
+以下の画像のように、「Settings」－「Logging」ツリーを開いて設定し、「Save」ボタンをクリックします。
+
+DEBUG ログはそれなりに多くのログが出るため、動作が確認できたら OFF にするとよいでしょう。
+
+![hMailServer Administrator 管理画面: Logging](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin06.png)
+
+
+
+
 
