@@ -138,6 +138,7 @@ Rule 設定ダイアログが表示されます。
 まず、「Name」には任意の名前を入力してください。ここでは ``Write Text``と入力しています。
 
 ![hMailServer Administrator 管理画面: Rule: Add](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin10.png)
+
 次に、「Criteria」の部分にある「Add」ボタンをクリックしてください。 Criteria の設定ダイアログが表示されます。
 
 手っ取り早く、「Predefined filed」から「From」を選び、「Search type」から「Wildcard」を選び、「Value」に ``*`` を入力してください。
