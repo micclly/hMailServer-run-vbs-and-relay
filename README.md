@@ -102,3 +102,27 @@ DEBUG ログはそれなりに多くのログが出るため、動作が確認�
 これを認証されないようにするため、「Settings」－「Advanced」－「IP Ranges」－「My computer」ツリーを開き、「Require SMTP Authentication」の列の一番下にある「External to external e-mail address」のチェックをオフにしてください。
 
 ![hMailServer Administrator 管理画面: Disable SMTP auth](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin07.png)
+
+#### VBScript を配置
+
+[EventHandlers.vbs](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/Events/EventHandlers.vbs) を ``C:\Program Files (x86)\hMailServer\Events\EventHandlers.vbs`` に上書きしてください。
+
+この VBScript には ``ReceiveFromMT4`` というプロシージャを追加定義していて、受信したメールの本文を単純に ``C:\Windows\Temp\mail-from-mt4.txt`` に書き出すようになっています。
+
+コマンドを実行したいような場合は、 ``objShell.Run`` を呼び出すように書き換えてください。
+
+ただし、 GUI が表示されるコマンドは実行できませんので注意してください。
+
+#### VBScript 有効化、VBScript を読み込み
+
+デフォルトでは VBScript の実行が有効になっていないため、「Settings」－「Advanced」ー「Scripts」を開き、「Enabled」のチェックをONにしてください。
+
+![hMailServer Administrator 管理画面: Scripts](https://raw.github.com/micclly/hMailServer-run-vbs-and-relay/master/images/admin08.png)
+
+また、hMailServer は VBScript をメモリにキャッシュするようになっていて、自動では再読み込みされません。
+
+ファイルを修正したら、必ず上記画面で「Reload scripts」と「Check syntax」してください。
+
+VBScript にシンタックスエラーがある場合は、「Check syntax」でエラーダイアログが表示されます。
+
+
